@@ -52,11 +52,75 @@
 
 <h1>Welcome to jQuery UI!</h1>
 
-<h1>DatePicker</h1>
+<h1>YOUR COMPONENTS:</h1>
+
+
+
 
 <!-- Datepicker -->
 <h2 class="demoHeaders">Datepicker</h2>
-<input type="text" id="datepicker">
+<div id="datepicker"></div>
+
+
+
+
+
+<!-- Progressbar -->
+<h2 class="demoHeaders">Selectmenu</h2>
+<select id="selectmenu">
+	<optgroup label="Forming">
+		<option>FHB</option>
+		<option>WIO</option>
+		<option>MPO</option>
+		<option>FPO</option>
+		<option>ABS</option>
+		<option>PSU</option>
+		<option>S2S</option>
+		<option>FSE</option>
+		<option>CPS</option>
+		<option>BAO</option>
+	</optgroup>
+	<optgroup label="Fabrication">
+		<option>ABE</option>
+		<option>CLR</option>
+		<option>FCL</option>
+		<option>ABM</option>
+		<option>EFO</option>
+		<option>FOH</option>
+		<option>RSM</option>
+		<option>FEH</option>
+		<option>FSR</option>
+		<option>FPA</option>
+		<option>TSS</option>
+	</optgroup>
+	<optgroup label="Special Fab">
+		<option>CLR</option>
+		<option>CRF</option>
+		<option>SFU</option>
+		<option>WOP</option>
+		<option>IMX</option>
+	</optgroup>
+	<optgroup label="Maintenance">
+		<option>HMU</option>
+		<option>LRC</option>
+		<option>MMM</option>
+		<option>UEP</option>
+		<option>ELE</option>
+		<option>WWT</option>
+		<option>PGM</option>
+		<option>CAT</option>
+	</optgroup>
+	<optgroup label="Logistics">
+		<option>WAC</option>
+		<option>RWI</option>
+		<option>STK</option>
+		<option>WAA</option>
+	</optgroup>
+	<optgroup label="Quality">
+		<option>PQT</option>
+	</optgroup>			
+</select>
+
 
 
 <script src="external/jquery/jquery.js"></script>
@@ -66,9 +130,10 @@
 $( "#datepicker" ).datepicker({
 	inline: true,
 	minDate: 3,
-	maxDate: 14,
-	currentText: "Now"
+	maxDate: 14
 });
+
+$( "#selectmenu" ).selectmenu();
 
 </script>
 </body>
